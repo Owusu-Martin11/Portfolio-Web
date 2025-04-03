@@ -1,0 +1,162 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #ff6b6b);
+    color: white;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    align-items: center;
+    gap: 40px; /* Space between items */
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Nav List */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav Items */
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #00eaff;
+}
+
+
+/* Header Section */
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://source.unsplash.com/1600x900/?coding,technology') center/cover no-repeat;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+/* Sections - Centered */
+section {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.success {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.danger {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+
+/* Project Cards */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    width: 280px;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffcc00, #ff6b6b);
+    color: black;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+button {
+    background: #00eaff;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0099cc;
+    color: white;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
